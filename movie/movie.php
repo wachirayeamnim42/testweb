@@ -26,12 +26,14 @@
     <script type="text/javascript">
         var str = "";
         var jsonEx = <?php echo $jsonfile ?>;
+        var x = document.getElementById("year");
     </script>
 <br>
     <div id="output">
-        <label for="output">OUTPUT:</label><br><br>
+        <label for="output">OUTPUT:</label><br>
         <textarea id="review" name="review" rows="10" cols="90">
         <?php
+
             if(isset($value)){
                 foreach ($data as $key => $value) {
                 echo $value['year'] . " : " . $value['title'];
