@@ -11,8 +11,13 @@
             $result = $this->db->query($sql);
             return $result->fetch_all($option);
         }
-        function exec($sql){ return $this->db->query($sql);}
-        function close(){ $this->db->close();}
+        function exec($sql){ 
+            return $this->db->query($sql);
+        }
+
+        function close(){
+            $this->db->close();
+        }
     }
 
 
